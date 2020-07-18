@@ -13,8 +13,8 @@
         android:layout_marginTop="12dp">
 
         <androidx.constraintlayout.widget.ConstraintLayout
-            android:layout_width="match_parent"
-            android:layout_height="118dp"
+            android:layout_width="421dp"
+            android:layout_height="wrap_content"
             android:background="#5B938E"
             android:padding="12dp">
 
@@ -66,7 +66,10 @@
                 android:id="@+id/phoneNumber_int"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textColor="#00FFE7"
+                android:layout_marginTop="4dp"
+                android:layout_marginEnd="40dp"
+                android:layout_marginRight="40dp"
+                android:textColor="#080909"
                 android:textSize="18sp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
@@ -76,24 +79,27 @@
                 android:id="@+id/email_txt"
                 android:layout_width="152dp"
                 android:layout_height="21dp"
-                android:layout_marginStart="20dp"
-                android:layout_marginLeft="20dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="4dp"
                 android:paddingLeft="@dimen/cardview_default_radius"
                 android:text="Email"
-                android:textColor="#00FFE7"
+                android:textColor="#EFFAF9"
                 app:layout_constraintStart_toEndOf="@+id/lastName_txt"
                 app:layout_constraintTop_toBottomOf="@+id/phoneNumber_int" />
 
             <TextView
                 android:id="@+id/address_txt"
-                android:layout_width="173dp"
-                android:layout_height="47dp"
+                android:layout_width="159dp"
+                android:layout_height="48dp"
                 android:text="Address"
-                android:textColor="#00FFE7"
+                android:textColor="#4B4E4E"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
                 app:layout_constraintStart_toEndOf="@+id/lastName_txt"
-                app:layout_constraintTop_toBottomOf="@+id/email_txt" />
+                app:layout_constraintTop_toBottomOf="@+id/email_txt"
+                app:layout_constraintVertical_bias="0.0" />
         </androidx.constraintlayout.widget.ConstraintLayout>
     </androidx.cardview.widget.CardView>
 </LinearLayout>

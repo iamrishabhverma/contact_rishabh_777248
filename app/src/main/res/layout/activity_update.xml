@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#80CBC4"
+    android:background="#416C68"
     android:padding="30dp"
     tools:context="com.example.assignment2.AddActivity">
 
@@ -13,14 +13,14 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="104dp"
+        android:autofillHints=""
         android:ems="10"
         android:hint="Enter First Name"
         android:inputType="textPersonName"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        tools:text="@tools:sample/first_names"
-        android:autofillHints="" />
+        tools:text="@tools:sample/first_names" />
 
     <EditText
         android:id="@+id/etlastName2"
@@ -75,22 +75,6 @@
         app:layout_constraintStart_toEndOf="@+id/update_button"
         app:layout_constraintTop_toBottomOf="@+id/etAddress2" />
 
-    <TextView
-        android:id="@+id/updateContact"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:alpha="?android:attr/windowTitleSize"
-        android:text="Upadate Contact"
-        android:textAppearance="@style/TextAppearance.AppCompat.Large"
-        android:textSize="24sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/etfirstName2"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.213" />
-
     <EditText
         android:id="@+id/etEmail2"
         android:layout_width="352dp"
@@ -117,5 +101,17 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/etEmail2" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="225dp"
+        android:layout_height="42dp"
+        android:text="Update Contact"
+        android:textColor="#F1F1F1"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

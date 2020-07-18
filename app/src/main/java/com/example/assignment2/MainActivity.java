@@ -48,6 +48,8 @@ public class MainActivity extends AppCompatActivity {
         FirstName = new ArrayList<>();
         LastName = new ArrayList<>();
         PhoneNumber = new ArrayList<>();
+        Email = new ArrayList<>();
+        Address = new ArrayList<>();
 
         storeDataInArrays();
 
